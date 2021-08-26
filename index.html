@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* montserrat-regular - latin */
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            src: url('fonts/montserrat-v18-latin-regular.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('fonts/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('fonts/montserrat-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+                url('fonts/montserrat-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+        }
+        /* montserrat-600 - latin */
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            src: url('fonts/montserrat-v18-latin-600.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('fonts/montserrat-v18-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('fonts/montserrat-v18-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+                url('fonts/montserrat-v18-latin-600.woff') format('woff'), /* Modern Browsers */
+                url('fonts/montserrat-v18-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('fonts/montserrat-v18-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            
+        }
+        body{
+            background-color: #e0fbfc;
+        }
+        table {
+            width:1200px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        caption {
+            padding: 5px;
+            font-size: 20px;
+            font-weight: 800;
+            
+        }
+        tbody{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .header{
+            width: 1200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .header th {
+            
+            width: 13%;
+            padding: 5px;
+            background-color: #98c1d9;
+            border: 1px solid #98c1d9 ;
+            color: #f8edeb;
+        }
+
+        .row td {
+            height: 100px;
+            border: 1px solid #e5e5e5 ;
+            border-radius: 2px;
+            width: 13%;
+            padding: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: white;
+            overflow: auto;
+        }
+       .row   {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        td > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #293241;
+            color: #f8edeb;
+            font-weight: 800;
+            font-size: 10px;
+            margin: 2px;
+        }
+       
+        td > .event{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 5px;
+            width: 80%;
+            height: auto;
+            background-color: #98c1d9;
+            border: 1.5px solid #293241;
+            border-radius: 3px;
+            flex-direction: column;
+        }
+        .event h5{
+            font-size: 10px;
+            color: #293241;
+        }
+
+        .event span{
+            color: #293241;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+          }
+
+          /* Track */
+        ::-webkit-scrollbar-track {
+            background: #e0fbfc;
+        }
+                /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #556580;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table cellspacing="0" cellpadding="0">
+        <caption>
+            Calendrier
+        </caption>
+            <tr class="header">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+
+        <tr class="row">
+            <td>
+                <div class="day_num">1</div>
+                <div class="event">
+                    <h5>Title : </h5>
+                    <p>teqdqz <span>5:30</span> dqz dqz </p>
+                    
+                </div>
+                <div class="event">
+                    <h5>Title : </h5>
+                    <p>teqdqz <span>5:30</span> dqz dqz </p>
+                    
+                </div>
+                <div class="event">
+                    <h5>Title : </h5>
+                    <p>teqdqz <span>5:30</span> dqz dqz </p>
+                    
+                </div>
+                
+            </td>
+            <td>
+                <div>2</div>
+                
+            </td>
+            <td>
+                <div>3</div>
+            </td>
+            <td>
+                <div>4</div>
+            </td>
+            <td>
+                <div>5</div>
+            </td>
+            <td>
+                <div>6</div>
+            </td>
+            <td>
+                <div>7</div>
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td>
+                <div>8</div>
+            </td>
+            <td>
+                <div>9</div>
+            </td>
+            <td>
+                <div>10</div>
+            </td>
+            <td>
+                <div>11</div>
+            </td>
+            <td>
+                <div>12</div>
+            </td>
+            <td>
+                <div>13</div>
+            </td>
+            <td>
+                <div>14</div>
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td>
+                <div>15</div>
+            </td>
+            <td>
+                <div>16</div>
+            </td>
+            <td>
+                <div>17</div>
+            </td>
+            <td>
+                <div>18</div>
+            </td>
+            <td>
+                <div>19</div>
+            </td>
+            <td>
+                <div>20</div>
+            </td>
+            <td>
+                <div>21</div>
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td>
+                <div>22</div>
+            </td>
+            <td>
+                <div>23</div>
+            </td>
+            <td>
+                <div>24</div>
+            </td>
+            <td>
+                <div>25</div>
+            </td>
+            <td>
+                <div>26</div>
+            </td>
+            <td>
+                <div>27</div>
+            </td>
+            <td>
+                <div>28</div>
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td>
+                <div>29</div>
+            </td>
+            <td>
+                <div>30</div>
+            </td>
+            <td>
+                <div>31</div>
+            </td>
+            
+        </tr>
+    </table>
+</body>
+
+</html>
